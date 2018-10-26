@@ -1,0 +1,16 @@
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.hidden {
+  visibility: hidden;
+}
+body {
+  background-image: url("../images/background.png");
+  background-position: center;
+  background-repeat: repeat;
+}
+.container {
+  background-color: whitesmoke;
+  align-content: center;
+}

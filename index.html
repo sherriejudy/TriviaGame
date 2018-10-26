@@ -8,20 +8,34 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Trivia Game</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
 </head>
 
 <body>
-    <div class="container">
-        <header id="heading">
+    <div class="container d-flex flex-column justify-content-center">
+        <header id="heading" class="text-center">
             <h1>
                 Totally Trivial Trivia!
             </h1>
         </header>
-        <button class="start"> Start </button>
-        <div id="timer">
+        <div class="text-center">
+            <button id="start" class="btn btn-primary"> Start </button>
         </div>
-        <div id="question"></div>
-        <div id="answer"></div>
+        <h2 id="timer"></h2>
+        <h3 id="question"></h3>
+        <div id="answers" class="column hidden">
+            <button id="1" class="btn btn-primary answer"></button>
+            <button id="2" class="btn btn-primary answer"></button>
+            <button id="3" class="btn btn-primary answer"></button>
+            <button id="4" class="btn btn-primary answer"></button>
+        </div>
+        <div>
+            <h2 id="correct"></h2>
+            <h2 id="incorrect"></h2>
+            <h2 id="unanswered"></h2>
+        </div>
     </div>
 </body>
 <script type="text/javascript" src="assets/javascript/app.js"> </script>
